@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Inspection FAQ Spokane WA | Elevation Inspections</title>
+  <meta name="description" content="Answers to the most common home inspection questions in Spokane WA. How long does it take? Should I attend? What's not covered? Call Dimitriy at 509-305-3465." />
+  <link rel="canonical" href="https://elevationinspections.org/faq.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .faq-list { max-width: 820px; margin: 0 auto; }
+    .faq-item {
+      border: 1px solid var(--gray-light);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .faq-item:hover { box-shadow: var(--shadow); }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: var(--white);
+      border: none;
+      padding: 22px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: var(--transition);
+      font-family: inherit;
+    }
+    .faq-question:hover { background: var(--off-white); }
+    .faq-question.open { background: var(--navy); color: var(--white); }
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--gold-light);
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+      transition: var(--transition);
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .faq-question.open .faq-icon {
+      background: var(--gold);
+      color: var(--navy);
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 28px 24px;
+      background: var(--white);
+      border-top: 1px solid var(--gray-light);
+    }
+    .faq-answer.open { display: block; }
+    .faq-answer p { font-size: 0.98rem; margin-bottom: 10px; }
+    .faq-answer ul { padding-left: 20px; margin-top: 8px; }
+    .faq-answer ul li { font-size: 0.96rem; color: var(--text-light); margin-bottom: 6px; list-style: disc; }
+    .faq-category {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      margin: 40px 0 16px;
+    }
+    .faq-category:first-child { margin-top: 0; }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Elevation Inspections Logo" onerror="this.style.display='none'" />
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Elevation Inspections</span>
+          <span class="nav-logo-tagline">Spokane, WA · Licensed &amp; Certified</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service-areas.html">Areas</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:5093053465" class="nav-phone">📞 509-305-3465</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Schedule Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> <span>FAQ</span></div>
+    <h1>Frequently Asked Questions</h1>
+    <p>Everything you need to know before your inspection. Don't see your question? Call or text Dimitriy directly at 509-305-3465.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="faq-list">
+
+      <!-- BEFORE THE INSPECTION -->
+      <div class="faq-category">Before the Inspection</div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          How long does a home inspection take?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Most full home inspections take <strong>2.5 to 4 hours</strong>, depending on the size, age, and condition of the property. Larger or older homes with more systems to evaluate take longer.</p>
+          <p>A sewer line inspection adds approximately 30–60 minutes. Dimitriy will give you a time estimate when you schedule.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Should I be present during the inspection?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><strong>Yes — highly recommended.</strong> Being present lets Dimitriy walk you through findings in real time, show you exactly what he's seeing, and explain what matters and what doesn't.</p>
+          <p>You'll leave with a much clearer understanding of the property than you'd get from reading a report alone. If you can't attend, Dimitriy will still walk you through the report over the phone.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          How do I schedule an inspection?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Call or text Dimitriy directly at <strong>509-305-3465</strong> or use the contact form on this site. He's available 7 days a week including evenings and will typically confirm your appointment the same day.</p>
+          <p>Have the property address and your purchase agreement timeline ready — Dimitriy will work around your contract deadlines.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          How much does a home inspection cost in Spokane?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Inspection pricing in Spokane typically ranges from <strong>$350 to $600+</strong> depending on the square footage, age, and type of the property. Commercial properties are priced separately based on size and complexity.</p>
+          <p>Call or text 509-305-3465 for a fast, accurate quote — most quotes are provided within the hour. Bundle a sewer line inspection with your full home inspection and <strong>save $100</strong>.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What should I do to prepare for the inspection?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>If you're the seller, make sure:</p>
+          <ul>
+            <li>All utilities are on (gas, electric, water)</li>
+            <li>Access is clear to the attic, crawl space, electrical panel, and water heater</li>
+            <li>Keys are available for all locked areas</li>
+            <li>Pets are secured or removed from the property</li>
+          </ul>
+          <p>If you're the buyer, just show up ready to take notes and ask questions.</p>
+        </div>
+      </div>
+
+      <!-- DURING THE INSPECTION -->
+      <div class="faq-category">During the Inspection</div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What does a home inspection cover?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>A full home inspection covers all visible and accessible components of the property, including:</p>
+          <ul>
+            <li>Roof, gutters, flashing, and drainage</li>
+            <li>Foundation, grading, and exterior walls</li>
+            <li>Electrical system — panel, wiring, outlets, GFCI</li>
+            <li>Plumbing — supply lines, drains, water heater, fixtures</li>
+            <li>HVAC — heating and cooling systems, ductwork</li>
+            <li>Attic — insulation, ventilation, visible framing</li>
+            <li>Basement and crawl space</li>
+            <li>Interior — ceilings, walls, floors, windows, doors</li>
+            <li>Built-in appliances</li>
+            <li>Fireplace and chimney (visible portions)</li>
+            <li>Garage — structure, door operation, safety features</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What is NOT covered in a standard home inspection?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>A standard inspection is visual — it covers what's accessible and visible. It does not include:</p>
+          <ul>
+            <li>Sewer lines (available as an add-on — bundle and save $100)</li>
+            <li>Inside walls, ceilings, or under flooring</li>
+            <li>Radon testing (ask about availability)</li>
+            <li>Mold testing (requires lab sampling)</li>
+            <li>Pest/termite inspection (requires a licensed pest inspector)</li>
+            <li>Swimming pools or hot tubs (available as add-on)</li>
+            <li>Detached structures unless specifically requested</li>
+          </ul>
+          <p>Dimitriy will note any areas of concern that warrant further specialist evaluation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What if Dimitriy finds something serious?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>He'll tell you clearly, on the spot. Dimitriy explains findings in plain language — what the issue is, what caused it, and what the practical implications are for you as a buyer or seller.</p>
+          <p>The report will prioritize findings by urgency so you know what's a safety concern, what needs prompt attention, and what's routine maintenance. For anything requiring specialist evaluation, Dimitriy will note that in the report.</p>
+        </div>
+      </div>
+
+      <!-- AFTER THE INSPECTION -->
+      <div class="faq-category">After the Inspection</div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          When will I receive the inspection report?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><strong>Same day.</strong> Dimitriy delivers your detailed photo report the day of the inspection — so you can review findings, talk with your real estate agent, and make decisions without delay.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Can I use the inspection report to negotiate the purchase price?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — and it's one of the most valuable uses of an inspection report. Significant findings give you grounds to:</p>
+          <ul>
+            <li>Request repairs before closing</li>
+            <li>Ask for a price reduction or seller credit</li>
+            <li>Exit the contract during the inspection contingency period</li>
+          </ul>
+          <p>Dimitriy's report is objective documentation — your real estate agent will know how to use it in negotiations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Can I call Dimitriy after the inspection with questions?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. Call or text <strong>509-305-3465</strong> anytime. Dimitriy is available to clarify findings, explain something in the report, or discuss what you read. You're not on your own after the inspection.</p>
+        </div>
+      </div>
+
+      <!-- SPOKANE-SPECIFIC -->
+      <div class="faq-category">Spokane-Specific Questions</div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Does Spokane have high radon levels?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p><strong>Yes.</strong> Spokane County is in EPA Zone 1, which means it has the highest predicted average indoor radon levels in the country. Radon is a colorless, odorless gas that is the second leading cause of lung cancer in the US.</p>
+          <p>A standard home inspection does not include radon testing — it requires a separate test. Ask Dimitriy about radon testing availability when you schedule your inspection.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          What are the most common issues found in Spokane homes?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>After 14 years and hundreds of inspections in the Spokane area, Dimitriy sees these issues most frequently:</p>
+          <ul>
+            <li><strong>Sewer line root intrusion</strong> — mature trees in older neighborhoods are the #1 culprit</li>
+            <li><strong>Moisture in crawl spaces</strong> — Spokane's freeze-thaw cycles push water into foundations</li>
+            <li><strong>Aging electrical panels</strong> — many homes still have Federal Pacific or Zinsco panels that are fire hazards</li>
+            <li><strong>Chimney crown cracking</strong> — common after Spokane winters</li>
+            <li><strong>Inadequate attic insulation</strong> — older homes weren't built to today's energy standards</li>
+            <li><strong>Deferred roof maintenance</strong> — missing flashing, failed caulking around penetrations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFAQ(this)">
+          Do you inspect homes in North Idaho (Coeur d'Alene, Post Falls)?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Elevation Inspections serves all of Eastern Washington and North Idaho, including Coeur d'Alene, Post Falls, Hayden, Rathdrum, and surrounding areas. Call or text <strong>509-305-3465</strong> to confirm coverage for your specific location.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 56px; padding: 40px; background: var(--off-white); border-radius: 16px;">
+      <h3 style="margin-bottom: 12px;">Still have questions?</h3>
+      <p style="margin-bottom: 24px;">Call or text Dimitriy directly — he'll answer personally.</p>
+      <a href="tel:5093053465" class="btn btn-primary">📞 509-305-3465</a>
+      &nbsp;&nbsp;
+      <a href="contact.html" class="btn btn-navy">Send a Message</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Ready to Schedule?</h2>
+    <p>Available 7 days a week including evenings. Call or text Dimitriy directly.</p>
+    <a class="cta-phone" href="tel:5093053465">509-305-3465</a>
+    <div class="cta-buttons" style="margin-top: 28px;">
+      <a href="tel:5093053465" class="btn btn-primary">Call Now</a>
+      <a href="contact.html" class="btn btn-outline">Request Online</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Elevation Inspections" onerror="this.style.display='none'" />
+        <p>Spokane's trusted home inspector. Licensed, certified, and committed to giving you the full picture before you close.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/full-home-inspection.html">Full Home Inspection</a></li>
+          <li><a href="services/pre-listing-inspection.html">Pre-Listing Inspection</a></li>
+          <li><a href="services/sewer-line-inspection.html">Sewer Line Inspection</a></li>
+          <li><a href="services/fireplace-chimney.html">Fireplace &amp; Chimney</a></li>
+          <li><a href="services/commercial-inspection.html">Commercial Inspection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Dimitriy</a></li>
+          <li><a href="service-areas.html">Service Areas</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="checklist.html">200-Point Checklist</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item"><span class="icon">📞</span><span><a href="tel:5093053465">509-305-3465</a></span></div>
+        <div class="footer-contact-item"><span class="icon">📧</span><span><a href="mailto:pnwelevation@gmail.com">pnwelevation@gmail.com</a></span></div>
+        <div class="footer-contact-item"><span class="icon">📍</span><span>100 N Howard St, Spokane WA</span></div>
+        <div class="footer-contact-item"><span class="icon">🕐</span><span>Mon–Sun, by appointment</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-license">
+    <div class="container">
+      <div class="footer-license-inner">
+        <span>© 2026 Elevation Inspections · <a href="https://elevationinspections.org">elevationinspections.org</a></span>
+        <span>WA License #23016503 · Nationally Certified · Fully Insured</span>
+        <span>Serving Spokane &amp; Eastern Washington</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+  function toggleFAQ(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('open'));
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+    // Open this one if it was closed
+    if (!isOpen) {
+      btn.classList.add('open');
+      answer.classList.add('open');
+    }
+  }
+</script>
+</body>
+</html>
