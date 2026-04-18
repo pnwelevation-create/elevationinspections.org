@@ -331,7 +331,7 @@ p  { font-size: 1.05rem; color: var(--text-light); line-height: 1.75; }
   color: var(--gray);
   font-size: 0.9rem;
 }
-.about-image img { width: 100%; height: 100%; object-fit: cover; }
+.about-image img { width: 100%; height: 100%; object-fit: cover; object-position: top right; }
 .about-content .section-label { display: block; }
 .about-content h2 { margin-bottom: 20px; }
 .about-content p  { margin-bottom: 16px; }
